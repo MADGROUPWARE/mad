@@ -39,7 +39,7 @@
 <img src="{{ data[1] }}">
 <text style="font-size:18px">{{ data[0] }}</text>
 <hr width="100%" color="silver">
-<text style="color:gray;">Tweets</text> {{ data[3] }}  |  <text style="color:gray;">Following </text>{{ data[3] }}  |  <text style="color:gray;">Followers  </text>{{data[2]}}
+<text style="color:gray;">Tweets</text> {{ data[4] }}  |  <text style="color:gray;">Following </text>{{ data[3] }}  |  <text style="color:gray;">Followers  </text>{{data[2]}}
 </div>
 
 
