@@ -1,0 +1,42 @@
+<html>
+<head>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='index.css') }}">
+<link rel=stylesheet type=text/javascript href="{{ url_for('static', filename='index.js') }}">
+</head>
+
+<body background="{{ url_for('static', filename='back_1.jpg') }}" style="height:50%">
+<div style="position:fixed; top:0%; left :15%; width:70%; height:100%; background-color:white; opacity:0.2; z-index:1; opacity:0.3;">
+</div>
+<br><br>
+<div style="position:fixed; top:0%; width:100%; height:4%; z-index:30; background-color:black; color:white; font-size:20px; display:block; padding:10px; font-family:Lucida Console, Monaco, monospace">
+<text style="position:fixed; left:15%">Twitter Profile Metric System</text>
+</div>
+
+<div id ="headnote">
+    	DISCOVER HOW PERSUASIVE YOU ARE ON TWITTER
+</div>
+
+<img src="{{ url_for('static', filename='logo.png') }}" style="position:fixed; top:33%; left:20%; width:170px; z-index:12">
+
+<div style="position:fixed; top:40%; left:20%; background-color:black; width:800px; height: 36px;border:1px solid#000; z-index:10">
+
+	<form id action="{{ url_for('home') }}" method="POST">
+		<input id="inputTextboxId" type="text" name="one_user" value="Type your @username an hit ENTER..." onfocus="watermark('inputTextboxId','Type your @username an hit ENTER...');" onblur="watermark('inputTextboxId','Type your @username an hit ENTER...');" style="position:fixed; left:35%; width:600px; height:35px; z-index:22"/>
+	</form>
+
+</div>
+
+<div id="footnote">
+	A free tool that allows you to check the power of your twitter profile.
+	<br>
+	Just enter your twitter username (password not needed) and you'll get an instant grade and report. It's easy.
+</div>
+
+
+<text style="position:fixed; top:95%; font-family:Georgia, serif; left:0%; z-index:40; background-color:black; width:100%; text-align:center; color:silver; height:5%; display:block; padding:3px; opacity:0.9;">
+Created by : Make A Difference.
+</text>
+
+</body>
+</html>

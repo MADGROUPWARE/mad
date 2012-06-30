@@ -1,0 +1,36 @@
+
+#footnote
+{
+display:block;
+position:fixed;
+top:70%;
+left:20%;
+font-family:"Verdana", Geneva, sans-serif;
+font-size:14px;
+text-decoration:none;
+color:gray;
+background-color:white;
+padding:20px 10px 20px 10px;
+-moz-border-radius:15px;
+border-radius:15px;
+z-index:10;
+}
+
+#headnote
+{
+position:fixed;
+top:15%;
+left:20%;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-size:25px;
+color:black;
+background-color:white;
+padding:20px 10px 20px 10px;
+display:block;
+-moz-border-radius:15px;
+border-radius:15px;
+right:20%;
+z-index:10;
+}
+
+

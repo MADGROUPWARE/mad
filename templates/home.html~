@@ -1,0 +1,67 @@
+<html>
+<head>>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='index.css') }}">
+<link rel=stylesheet type=text/javascript href="{{ url_for('static', filename='index.js') }}">
+<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='demo.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}" />
+</head>
+
+<body  background="{{ url_for('static', filename='back_1.jpg') }}" >
+<div style="position:fixed; top:0%; left :15%; width:70%; height:100%; background-color:white; opacity:0.2; z-index:1; opacity:0.3;">
+</div>
+
+<div style="position:fixed; top:0%; width:100%; height:4%; z-index:30; background-color:black; color:white; font-size:20px; display:block; padding:10px; font-family:Lucida Console, Monaco, monospace">
+<text style="position:fixed; left:15%">Twitter Profile Metric System</text>
+</div>
+
+
+
+<div class="container">
+            <div class="header">
+                <div class="clr"></div>
+            </div>
+
+        	<div class="sp-container">
+				<div class="sp-content">
+					<div class="sp-logo"></div>
+					<h2 class="frame-1">Hey {{ data[0] }} </h2>
+					<h2 class="frame-2">You got {{ data[2]}} Followers</h2>
+					<h2 class="frame-3">Follow {{ data[3] }} people. Tweet Count : {{data[4]}}</h2>
+					<h2 class="frame-4">Grade : {{ data[5] }}</h2>
+				</div>
+		</div>
+</div>
+
+<div id="details_name">
+<img src="{{ data[1] }}">
+<text style="font-size:18px">{{ data[0] }}</text>
+<hr width="100%" color="silver">
+<text style="color:gray;">Tweets</text> {{ data[3] }}  |  <text style="color:gray;">Following </text>{{ data[3] }}  |  <text style="color:gray;">Followers  </text>{{data[2]}}
+</div>
+
+
+<div id="details_grade">
+<text style="color:silver;">
+GRADE</text><hr width="100%" color="silver">
+{{ data[5] }}
+</div>
+
+<div id="details_tweets">
+<text style="color:gray;">Your Recent Tweets</text>
+<hr width="100%" color="silver">
+{% for item in disp_tweet %}
+    <br><br>{{ item }}
+{% endfor %}
+</div>
+
+
+<text style="position:fixed; top:95%; font-family:Georgia, serif; left:0%; z-index:40; background-color:black; width:100%; text-align:center; color:silver; height:5%; display:block; padding:3px; opacity:0.9;">
+Created by : Make A Difference.
+</text>
+
+
+</body>
+</html>
